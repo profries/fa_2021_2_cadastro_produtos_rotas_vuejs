@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Produtos</h1>
+        <nav>
+            <router-link to="/cadastro">Cadastrar Produtos</router-link>
+            <router-link to="/lista">Listar Produtos</router-link>
+            
+        </nav>
+        <router-view></router-view>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="services/produto-api.js"></script>
+<script src="componentes/form-produtos.js"></script>
+<script src="componentes/tabela-produtos.js"></script>
+<script src="cadastro.js"></script>
+</html>
